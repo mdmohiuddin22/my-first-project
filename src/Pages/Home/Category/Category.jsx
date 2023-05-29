@@ -9,13 +9,22 @@ import Slide2 from '../../../assets/home/slide2.jpg';
 import Slide3 from '../../../assets/home/slide3.jpg';
 import Slide4 from '../../../assets/home/slide4.jpg';
 import Slide5 from '../../../assets/home/slide5.jpg';
+import SectionTitle from "../../../component/SectionTitle/SectionTitle";
 
 
 
 
 const Category = () => {
     return (
-        <Swiper
+       
+       <section>
+        <SectionTitle 
+        subHeading={"From 11.00am to 10.00pm"}
+        heading={"Order Online"}
+        >
+
+        </SectionTitle>
+         <Swiper
             slidesPerView={4}
             spaceBetween={30}
             centeredSlides={true}
@@ -32,10 +41,8 @@ const Category = () => {
     <SwiperSlide><img src= {Slide3} alt="" /> <h3 className="text-4xl uppercase text-center -mt-16 text-white">Soups</h3></SwiperSlide>
     <SwiperSlide><img src= {Slide4} alt="" /> <h3 className="text-4xl uppercase text-center -mt-16 text-white">Desserts</h3></SwiperSlide>
     <SwiperSlide><img src= {Slide5} alt="" /> <h3 className="text-4xl uppercase text-center -mt-16 text-white">Salad</h3></SwiperSlide>
-   
-    
-  
-        </Swiper>
+     </Swiper>
+       </section>
     );
 };
 
